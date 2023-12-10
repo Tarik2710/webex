@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+
+    width: 80%;
+    margin: auto;
+}
+
+:root {
+    --tamnoPlava: rgb(29, 82, 124);
+    --svetloPlava: #459ad3;
+    --orange: rgb(253, 127, 69);
+    --tamnoSiva: #3c3b3c;
+    --svetloSiva: lightgray;
+    --bela: #fff;
+    --transition: .3s;
+    --padding: 100px 0;
+    --crna: #000;
+    
+
+}
+
+.dugme {
+    
+        text-transform: uppercase;
+        font-size: 18px;
+        padding: 1rem 3rem;
+        background: transparent;
+        color: var(--bela);
+        border: 1px solid var(--bela);
+        cursor: pointer;
+        transition: var(--transition);
+}
+
+.dugme:hover {
+    background: var(--bela);
+    color: var(--crna);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--tamnoPlava);
+
+}
+
+hr {
+
+    border: none;
+    height: 1px;
+    background-color: var(--tamnoPlava);
+    width: 20%;
+    margin: 15px 0;
+}
+
+/* Header */
+
+header {
+    background: linear-gradient(to right, var(--orange), var(--tamnoPlava));
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;
+    align-items: center;
+
+
+}
+
+header .logo a {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--bela);
+}
+
+header nav ul {
+    display: flex;
+
+}
+
+header nav ul li a {
+    margin-left: 20px;
+    text-transform: uppercase;
+    color: var(--bela);
+    transition: var(--transition);
+    
+
+}
+
+header nav ul li a:hover {
+    color: var(--svetloSiva);
+}
+
+/* Section hero */
+
+
+.hero {
+
+    background: linear-gradient(rgba(29, 82, 124, 0.7), rgba(253,127,69,0.7) ), url(img/baloon.jpg);
+    background-position: top center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero h1 span {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.hero p {
+
+    font-size: 1.2rem;
+    margin: 20px 10px;
+    text-align: center;
+}
+
+.hero button {
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 1rem 3rem;
+    background: transparent;
+    color: var(--bela);
+    border: 1px solid var(--bela);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.hero button:hover {
+
+    background: var(--bela);
+    color: var(--crna);
+}
+
+/* about */
+
+.about {
+    padding: var(--padding);
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.about .about-text {
+    flex-basis: 48%;
+}
+
+.about .about-text hr {
+    border: none;
+    height: 1px;
+    background-color: var(--tamnoPlava);
+    width: 20%;
+    margin: 15px 0;
+
+}
+
+.about .about-slika {
+    flex-basis: 48%;
+}
+
+.about .about-text .dugme {
+
+    background-color: var(--tamnoPlava);
+    margin-top: 15px;
+
+}
+.about .about-text .dugme:hover {
+
+    background-color: var(--orange);
+    color: var(--bela);
+}
+
+/* services */
+
+.services {
+
+    padding: var(--padding);
+    background: linear-gradient(rgba(29, 82, 124, 0.7), rgba(29,82,124,0.7) ), url(img/header.jpg);
+    color: var(--bela);
+    background-attachment: fixed;
+
+}
+
+.services .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services .container .services-icons {
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+   
+}
+
+.services .container .services-icons i {
+    
+    font-size: 50px;
+    color: var(--orange);
+    flex-basis: 50%;
+
+
+}
+
+.services .container .services-text {
+
+    flex-basis: 50%;
+}
+
+.services .container .services-text h2 {
+    color: var(--bela);
+}
+.services .container .services-text hr {
+    background-color: var(--orange);
+}
+.services .container .services-text p {
+
+    margin: 20px 0;
+}
+
+/* latest posts */
+
+.blog {
+    padding: var(--padding);
+    text-align: center;
+
+}
+
+.blog hr {
+    margin: 20px auto;
+    background-color: var(--orange);
+}
+
+.blog .container{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.blog .container article {
+    flex-basis: 32%;
+    background-color: aliceblue;
+    padding: 10px;
+
+}
+
+.blog .container article .meta {
+
+    background-color: var(--orange);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.blog .container article h3 {
+
+    font-size: 25px ;
+    margin: 10px 0;
+    color: var(--tamnoPlava);
+
+}
+
+.blog .container article .dugme {
+    background-color: var(--tamnoPlava);
+    margin: 15px 0;
+
+}
+.blog .container article .dugme:hover {
+    background-color: var(--orange);
+    color: var(--bela);
+}
+
+/* footer */
+
+footer {
+    padding: var(--padding);
+    background: linear-gradient(rgba(29, 82, 124, 0.7), rgba(22,82,124,0.7) ), url(img/baloon.jpg);
+    background-position: top center;
+    background-size: cover;
+    color: var(--bela);
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container article {
+    flex-basis: 33%;
+
+}
+
+footer .container article h3 {
+    margin-bottom: 15px;
+}
+
+/* responsive */
+
+@media (max-width: 768px){
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+    .about .about-text {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .about .about-slika {
+        flex-basis: 100%;
+    }
+    .about .about-text hr {
+        margin: 20px auto;
+    }
+
+    .services .container {
+        flex-direction: column-reverse;
+    }
+
+    .services .container .services-icons {
+        text-align: center;
+
+    }
+
+    .services .container .services-text {
+        text-align: center;
+        }
+
+        .services .container .services-text hr {
+            margin: 20px auto;
+        }
+
+        .blog .container article {
+            flex-basis: 100%;
+            margin-bottom: 50px;
+        }
+
+        footer .container article {
+            flex-basis: 100%;
+            text-align: center;
+             margin-bottom: 50px;        }
+
+
+
+
+};
+    
